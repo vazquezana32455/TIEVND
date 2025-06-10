@@ -1,0 +1,64 @@
+body {
+  background-color: #8f8ddf; /* Color de fondo claro pastel */
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.tarjetas-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.tarjeta {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  width: 280px;
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+  .tarjeta:hover {
+    transform: translateY(-5px);
+  }
+
+.icono img {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 1rem;
+  filter: hue-rotate(20deg) saturate(2); /* Tono naranja */
+}
+
+.tarjeta h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.tarjeta li {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.3rem;
+}
+
+.link {
+  color: #f97836;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+  .link::after {
+    content: ' 🔗';
+  }
